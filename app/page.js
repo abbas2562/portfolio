@@ -1,6 +1,10 @@
 import SugarcaneGallery from "../components/SugarcaneGallery";
 
 const EMAIL = "smabbas2562@gmail.com";
+const LIVE = {
+  invoice: "https://invoicepro-xi.vercel.app/",
+  sugarcane: "https://sugarcane-monitoring.netlify.app/",
+};
 const CV = "/Syed_Muhammad_Abbas_Zaidi_CV.pdf";
 
 const skills = [
@@ -46,6 +50,7 @@ export default function Home() {
               <h3>InvoicePro: invoicing for a distribution business</h3>
               <p>A .NET business management system that handles products, customers and invoices, with a dashboard for revenue, pending payments and invoice status. It includes a dark mode and works in PKR.</p>
               <ul className="tags"><li>.NET</li><li>C#</li><li>SQL Server</li></ul>
+              <a className="live" href={LIVE.invoice} target="_blank" rel="noopener noreferrer">View live frontend demo ↗</a>
             </div>
             <div className="frame"><div className="bar"><i /><i /><i /></div><img src="/images/invoice.png" alt="InvoicePro dashboard" loading="lazy" /></div>
           </article>
@@ -55,6 +60,7 @@ export default function Home() {
               <h3>Sugarcane yield prediction with remote sensing</h3>
               <p>My final year project. Satellite imagery gives vegetation indices such as NDVI, EVI and SAVI for each field. Python models, including an LSTM, use them to predict yield, and the web dashboard shows field maps, trends and the final prediction.</p>
               <ul className="tags"><li>Python</li><li>LSTM</li><li>Remote sensing</li><li>Data visualization</li></ul>
+              <a className="live" href={LIVE.sugarcane} target="_blank" rel="noopener noreferrer">Open live project ↗</a>
             </div>
             <SugarcaneGallery />
           </article>
